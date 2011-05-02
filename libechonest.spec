@@ -3,8 +3,8 @@
 %define develname %mklibname -d echonest
 
 Name: libechonest
-Version: 1.1.1
-Release: %mkrel 2
+Version: 1.1.5
+Release: %mkrel 1
 Summary: C++ wrapper for the Echo Nest API
 Group: System/Libraries
 License: GPLv2+
