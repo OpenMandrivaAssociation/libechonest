@@ -4,7 +4,7 @@
 
 Name: libechonest
 Version: 1.1.1
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: C++ wrapper for the Echo Nest API
 Group: System/Libraries
 License: GPLv2+
