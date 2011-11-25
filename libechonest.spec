@@ -1,9 +1,9 @@
-%define major 1.1
+%define major 1.2
 %define libname %mklibname echonest %major
 %define develname %mklibname -d echonest
 
 Name: libechonest
-Version: 1.1.5
+Version: 1.2.1
 Release: %mkrel 1
 Summary: C++ wrapper for the Echo Nest API
 Group: System/Libraries
@@ -61,3 +61,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,-)
 %{_includedir}/echonest
 %{_libdir}/%{name}.so
+%{_libdir}/pkgconfig/%{name}.pc
