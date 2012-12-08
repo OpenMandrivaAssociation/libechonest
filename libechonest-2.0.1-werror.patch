@@ -1,0 +1,15 @@
+diff -urN libechonest-2.0.1/CMakeLists.txt libechonest-2.0.1-patched/CMakeLists.txt
+--- libechonest-2.0.1/CMakeLists.txt	2012-07-22 04:25:10.000000000 +1100
++++ libechonest-2.0.1-patched/CMakeLists.txt	2012-08-26 16:07:42.640459283 +1100
+@@ -31,11 +31,6 @@
+         add_definitions( -fvisibility=hidden )
+     endif()
+ 
+-    # disable -Werror on ARM since Qt containers cause a lot of alignment warnings
+-    if ( NOT CMAKE_SYSTEM_PROCESSOR MATCHES "arm" )
+-        add_definitions( -Werror )
+-    endif()
+-
+ # to be added:
+ #       -Wshadow
+ # FIXME we might want this one back in, but Qt 4.4.3 spits gazillions of warnings with it on Linux-64:
