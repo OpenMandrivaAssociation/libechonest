@@ -8,6 +8,7 @@ License:	GPLv2
 Group:		System/Libraries
 Url:		https://projects.kde.org/projects/playground/libs/libechonest/
 Source0:	http://pwsp.cleinias.com/%{name}-%{version}.tar.bz2
+Source100:	%{name}.rpmlintrc
 Patch0:		libechonest-2.0.1-werror.patch
 BuildRequires:	cmake
 BuildRequires:	pkgconfig(QJson)
