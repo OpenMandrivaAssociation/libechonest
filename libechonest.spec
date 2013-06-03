@@ -1,17 +1,16 @@
 %define oname	echonest
-%define major	2.0
+%define major	2.1
 %define libname %mklibname %{oname} %{major}
 %define devname %mklibname -d %{oname}
 
 Summary:	Qt library for communicating with The Echo Nest
 Name:		libechonest
-Version:	2.0.1
-Release:	4
+Version:	2.1.0
+Release:	1
 License:	GPLv2
 Group:		System/Libraries
 Url:		https://projects.kde.org/projects/playground/libs/libechonest/
 Source0:	http://pwsp.cleinias.com/%{name}-%{version}.tar.bz2
-Patch0:		libechonest-2.0.1-werror.patch
 
 BuildRequires:	cmake
 BuildRequires:	doxygen
@@ -28,7 +27,6 @@ including all API functions.
 %package -n %{libname}
 Summary:	libechonest core library
 Group:		System/Libraries
-Obsoletes:	%{_lib}echonest2 < 2.0.1-4
 
 %description -n %{libname}
 A c++/qt library to access the APIs provided by The Echo Nest.
@@ -41,11 +39,10 @@ Requires:	%{libname} = %{version}-%{release}
 
 %description -n %{devname}
 This package contains header files needed if you wish to build applications
-based on %{name}
+based on %{name}.
 
 %prep
 %setup -q
-%apply_patches
 
 %build
 %cmake
