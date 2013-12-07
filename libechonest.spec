@@ -6,7 +6,7 @@
 Summary:	Qt library for communicating with The Echo Nest
 Name:		libechonest
 Version:	2.1.0
-Release:	4
+Release:	5
 License:	GPLv2
 Group:		System/Libraries
 Url:		https://projects.kde.org/projects/playground/libs/libechonest/
