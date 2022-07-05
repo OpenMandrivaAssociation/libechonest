@@ -1,5 +1,5 @@
 %define oname	echonest
-%define major	2.1
+%define major	2.3
 %define libname %mklibname %{oname} %{major}
 %define devname %mklibname -d %{oname}
 
