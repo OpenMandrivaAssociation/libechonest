@@ -57,6 +57,6 @@ based on %{name}.
 #{_libdir}/libechonest.so.%{major}*
 
 %files -n %{devname}
-%{_includedir}/%{oname}/
-%{_libdir}/%{name}.so
-%{_libdir}/pkgconfig/%{name}.pc
+#{_includedir}/%{oname}/
+#{_libdir}/%{name}.so
+#{_libdir}/pkgconfig/%{name}.pc
