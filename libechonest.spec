@@ -54,9 +54,9 @@ based on %{name}.
 %make_install -C build
 
 %files -n %{libname}
-#{_libdir}/libechonest.so.%{major}*
+%{_libdir}/libechonest5.so.%{major}*
 
 %files -n %{devname}
-#{_includedir}/%{oname}/
-#{_libdir}/%{name}.so
-#{_libdir}/pkgconfig/%{name}.pc
+%{_includedir}/%{oname}5/
+%{_libdir}/%{name}5.so
+%{_libdir}/pkgconfig/%{name}5.pc
