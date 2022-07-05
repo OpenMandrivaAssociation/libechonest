@@ -54,7 +54,7 @@ based on %{name}.
 %make_install -C build
 
 %files -n %{libname}
-%{_libdir}/libechonest.so.%{major}*
+#{_libdir}/libechonest.so.%{major}*
 
 %files -n %{devname}
 %{_includedir}/%{oname}/
