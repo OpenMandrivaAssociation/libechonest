@@ -5,19 +5,20 @@
 
 Summary:	Qt library for communicating with The Echo Nest
 Name:		libechonest
-Version:	2.1.0
-Release:	10
+Version:	2.3.1
+Release:	1
 License:	GPLv2
 Group:		System/Libraries
 Url:		https://projects.kde.org/projects/playground/libs/libechonest/
-Source0:	http://pwsp.cleinias.com/%{name}-%{version}.tar.bz2
+Source0:	https://github.com/KDE/libechonest/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:	cmake
 BuildRequires:	doxygen
 BuildRequires:	pkgconfig(QJson)
-BuildRequires:	pkgconfig(QtCore)
-BuildRequires:	pkgconfig(QtNetwork)
-BuildRequires:	pkgconfig(QtTest)
+BuildRequires:	pkgconfig(Qt5Core)
+BuildRequires:	pkgconfig(Qt5Xml)
+BuildRequires:	pkgconfig(Qt5Network)
+BuildRequires:	pkgconfig(Qt5Test)
 
 %description
 Qt library for communicating with The Echo Nest.
@@ -45,11 +46,11 @@ based on %{name}.
 %setup -q
 
 %build
-%cmake
-%make
+%cmake -DBUILD_WITH_QT4:BOOL=OFF
+%make_build
 
 %install
-%makeinstall_std -C build
+%make_install -C build
 
 %files -n %{libname}
 %{_libdir}/libechonest.so.%{major}*
