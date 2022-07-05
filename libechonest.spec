@@ -13,6 +13,7 @@ Url:		https://projects.kde.org/projects/playground/libs/libechonest/
 Source0:	https://github.com/KDE/libechonest/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:	cmake
+BuildRequires:  qmake5
 BuildRequires:	doxygen
 BuildRequires:	pkgconfig(QJson)
 BuildRequires:	pkgconfig(Qt5Core)
